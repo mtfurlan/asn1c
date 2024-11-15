@@ -108,7 +108,7 @@ BIT_STRING_encode_jer(const asn_TYPE_descriptor_t *td,
         }
         int wr = snprintf(scratch, sizeof(scratch), "%lu",
                 st->size * 8 - (st->bits_unused));
-        if(wr < 0 || wr >= sizeof(scratch)) {
+        if(wr < 0 || (size_t)wr >= sizeof(scratch)) {
             ASN__ENCODE_FAILED;
         }
         ASN__CALLBACK(scratch, wr);
@@ -283,7 +283,7 @@ BIT_STRING_decode_jer(const asn_codec_ctx_t *opt_codec_ctx,
 
         SKIPCHAR('}');
     } else {
-        if(st->size * 8 < cts->size) {
+        if(st->size * 8 < (size_t)cts->size) {
             RETURN(RC_FAIL);
         }
         st->bits_unused = (st->size * 8) - cts->size;
