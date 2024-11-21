@@ -37,7 +37,7 @@ if test ! -f converter-example.mk ; then
 fi
 
 EXTRA_CFLAGS="-DJUNKTEST -D_DEFAULT_SOURCE"
-test -f config.h && EXTRA_CFLAGS="-DHAVE_CONFIG_H ${EXTRA_CFLAGS}"
+test -f config.h && EXTRA_CFLAGS="-DHAVE_ASN1C_CONFIG_H ${EXTRA_CFLAGS}"
 test -n "$TITLE" && EXTRA_CFLAGS="-DASN_CONVERTER_TITLE=\"$TITLE\" ${EXTRA_CFLAGS}"
 
 {

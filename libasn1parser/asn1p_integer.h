@@ -1,9 +1,9 @@
 #ifndef	ASN1P_INTEGER_H
 #define	ASN1P_INTEGER_H
 
-#ifdef	HAVE_CONFIG_H
+#ifdef	HAVE_ASN1C_CONFIG_H
 #include "config.h"
-#endif	/* HAVE_CONFIG_H */
+#endif	/* HAVE_ASN1C_CONFIG_H */
 
 #include <asn1_buffer.h>
 

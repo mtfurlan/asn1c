@@ -7,7 +7,7 @@
  *
  * cc -DPDU=MyCustomType -o myDecoder.o -c converter-example.c
  */
-#ifdef    HAVE_CONFIG_H
+#ifdef    HAVE_ASN1C_CONFIG_H
 #include <config.h>
 #endif
 #define __EXTENSIONS__

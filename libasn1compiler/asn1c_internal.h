@@ -1,7 +1,7 @@
 #ifndef	ASN1_COMPILER_INTERNAL_H
 #define	ASN1_COMPILER_INTERNAL_H
 
-#ifdef	HAVE_CONFIG_H
+#ifdef	HAVE_ASN1C_CONFIG_H
 #include <config.h>
 #endif
 
